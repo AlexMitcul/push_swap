@@ -6,27 +6,13 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 02:05:08 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/08 02:10:14 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/08 03:38:46 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	check_overflow(unsigned long n)
+long long	ft_atoll(char *str)
 {
-	if ((n * 10) / 10 != n)
-		return (1);
-	return (0);
-}
-
-static int	get_overflow_number(int sign)
-{
-	if (sign == 1)
-		return (-1);
-	return (0);
-}
-
-int	ft_atoll(char *str)
-{
-	int			sign;
+	long long	sign;
 	long long	res;
 
 	sign = 1;
@@ -42,8 +28,6 @@ int	ft_atoll(char *str)
 	}
 	while (*str != '\0' && (*str >= '0' && *str <= '9'))
 	{
-		if (check_overflow(res))
-			return (get_overflow_number(sign));
 		res = res * 10 + (*str - '0');
 		str++;
 	}

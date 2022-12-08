@@ -6,7 +6,7 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 19:19:38 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/08 02:49:35 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/08 03:41:25 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	is_bad_number(int *value, char *str);
 /**
 // * utils
 */
-int		ft_atoll(char *str);
+long long	ft_atoll(char *str);
 
 /**
 // * free.c

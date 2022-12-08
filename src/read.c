@@ -6,7 +6,7 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 01:29:55 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/08 02:59:51 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/08 03:42:05 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,12 @@ int	is_bad_number(int *value, char *str)
 	return (0);
 }
 
+// * OK
 int	read_data(t_stack **stack, int argc, char **argv)
 {
 	int	value;
 
+	value = 0;
 	while (argc > 1)
 	{
 		if (is_bad_number(&value, argv[argc - 1]))

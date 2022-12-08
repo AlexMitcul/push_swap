@@ -6,7 +6,7 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 20:13:43 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/08 02:59:22 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/08 03:57:42 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	push(t_stack **stack, t_stack *item)
 	}
 }
 
-// ! Need to test
+// * OK
 t_stack	*pop(t_stack **stack)
 {
 	t_stack	*item;
@@ -44,11 +44,14 @@ t_stack	*pop(t_stack **stack)
 	if (*stack == NULL)
 		return (NULL);
 	item = *stack;
-	*stack = (*stack)->next;
+	if (item->next == NULL)
+		*stack = NULL;
+	else
+		*stack = (*stack)->next;
 	return (item);
 }
 
-// ! Need to test
+// * OK
 void	insert_at(t_stack **stack, t_stack *item, int position)
 {
 	t_stack	*curr;
@@ -75,7 +78,7 @@ void	insert_at(t_stack **stack, t_stack *item, int position)
 	}
 }
 
-// ! Need to test
+// * OK
 int	get_stack_length(t_stack *stack)
 {
 	int	len;

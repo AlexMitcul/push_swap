@@ -6,7 +6,7 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 19:14:58 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/08 02:29:57 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/08 03:58:28 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // TODO
 int	return_error(void)
 {
-	ft_printf("Error\n"); // ! Move output to std error
+	ft_putstr_fd("Error\n", STDERR_FILENO);
 	return (0);
 }
 
