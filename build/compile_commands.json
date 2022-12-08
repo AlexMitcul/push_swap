@@ -1,0 +1,317 @@
+[
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/push_swap.dir/src/main.c.o -c /Users/alexmitcul/Documents/push_swap/src/main.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/src/main.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/push_swap.dir/src/moves.c.o -c /Users/alexmitcul/Documents/push_swap/src/moves.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/src/moves.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/push_swap.dir/src/stack_operations.c.o -c /Users/alexmitcul/Documents/push_swap/src/stack_operations.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/src/stack_operations.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/push_swap.dir/src/stack.c.o -c /Users/alexmitcul/Documents/push_swap/src/stack.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/src/stack.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/push_swap.dir/src/read.c.o -c /Users/alexmitcul/Documents/push_swap/src/read.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/src/read.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/push_swap.dir/src/free.c.o -c /Users/alexmitcul/Documents/push_swap/src/free.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/src/free.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/push_swap.dir/src/ft_atoll.c.o -c /Users/alexmitcul/Documents/push_swap/src/ft_atoll.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/src/ft_atoll.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/push_swap.dir/src/tests.c.o -c /Users/alexmitcul/Documents/push_swap/src/tests.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/src/tests.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_atoi.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_atoi.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_atoi.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_bzero.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_bzero.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_bzero.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_calloc.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_calloc.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_calloc.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_isalnum.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_isalnum.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_isalnum.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_isalpha.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_isalpha.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_isalpha.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_isascii.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_isascii.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_isascii.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_isdigit.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_isdigit.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_isdigit.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_isprint.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_isprint.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_isprint.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_itoa.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_itoa.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_itoa.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstadd_back.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstadd_back.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstadd_back.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstadd_front.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstadd_front.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstadd_front.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstclear.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstclear.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstclear.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstdelone.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstdelone.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstdelone.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstiter.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstiter.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstiter.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstlast.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstlast.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstlast.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstmap.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstmap.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstmap.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstnew.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstnew.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstnew.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_lstsize.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstsize.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_lstsize.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_memchr.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_memchr.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_memchr.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_memcmp.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_memcmp.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_memcmp.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_memcpy.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_memcpy.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_memcpy.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_memmove.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_memmove.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_memmove.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_memset.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_memset.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_memset.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_putchar_fd.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_putchar_fd.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_putchar_fd.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_putendl_fd.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_putendl_fd.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_putendl_fd.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_putnbr_fd.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_putnbr_fd.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_putnbr_fd.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_putstr_fd.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_putstr_fd.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_putstr_fd.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_split.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_split.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_split.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strchr.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strchr.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strchr.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strdup.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strdup.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strdup.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_striteri.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_striteri.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_striteri.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strjoin.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strjoin.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strjoin.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strlcat.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strlcat.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strlcat.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strlcpy.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strlcpy.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strlcpy.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strlen.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strlen.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strlen.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strmapi.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strmapi.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strmapi.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strncmp.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strncmp.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strncmp.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strnstr.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strnstr.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strnstr.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strrchr.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strrchr.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strrchr.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_strtrim.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_strtrim.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_strtrim.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_substr.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_substr.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_substr.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_tolower.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_tolower.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_tolower.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/libft",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/libft.dir/ft_toupper.c.o -c /Users/alexmitcul/Documents/push_swap/libs/libft/ft_toupper.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/libft/ft_toupper.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/ft_printf.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/ft_printf.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/ft_printf.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/print_c.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_c.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_c.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/print_d.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_d.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_d.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/print_p.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_p.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_p.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/print_percent.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_percent.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_percent.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/print_s.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_s.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_s.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/print_u.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_u.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_u.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/print_x.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_x.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/print_x.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/token.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/token.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/token.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/ft_printf",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/ft_printf.dir/utils.c.o -c /Users/alexmitcul/Documents/push_swap/libs/ft_printf/utils.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/ft_printf/utils.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/get_next_line",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/get_next_line.dir/get_next_line.c.o -c /Users/alexmitcul/Documents/push_swap/libs/get_next_line/get_next_line.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/get_next_line/get_next_line.c"
+},
+{
+  "directory": "/Users/alexmitcul/Documents/push_swap/build/libs/get_next_line",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/get_next_line.dir/get_next_line_utils.c.o -c /Users/alexmitcul/Documents/push_swap/libs/get_next_line/get_next_line_utils.c",
+  "file": "/Users/alexmitcul/Documents/push_swap/libs/get_next_line/get_next_line_utils.c"
+}
+]

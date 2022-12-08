@@ -6,7 +6,7 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 20:13:43 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/07 21:00:01 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/08 02:59:22 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_stack	*init_new_item(int value)
 	return (item);
 }
 
-// ! Need to test
+// * OK
 void	push(t_stack **stack, t_stack *item)
 {
 	if (*stack == NULL)

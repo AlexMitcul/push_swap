@@ -6,21 +6,26 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 19:19:38 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/07 20:59:55 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/08 02:49:35 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "../libft/includes/ft_printf.h"
-# include "../libft/includes/libft.h"
+# include "../libs/libft/libft.h"
+# include "../libs/ft_printf/ft_printf.h"
+
+# include <stdlib.h>
+
+# define ERROR 0
+# define SUCCESS 1
 
 typedef struct s_stack
 {
 	int				value;
 	struct s_stack	*next;
-}				t_stack;
+}					t_stack;
 
 typedef enum e_moves {
 	SA,
@@ -35,6 +40,22 @@ typedef enum e_moves {
 	RRB,
 	RRR
 }	t_moves;
+
+void	test(void);
+
+int	is_in_stack(t_stack *stack, int value);
+int	is_bad_number(int *value, char *str);
+
+/**
+// * utils
+*/
+int		ft_atoll(char *str);
+
+/**
+// * free.c
+*/
+void	free_stack(t_stack *stack);
+
 
 /**
 // * stack.c
@@ -57,5 +78,10 @@ void	push_to(t_stack **from, t_stack **to);
 // * moves.c
 */
 void	move(t_stack **a, t_stack **b, t_moves moves);
+
+/**
+// * read.c
+*/
+int	read_data(t_stack **stack, int argc, char **argv);
 
 #endif
