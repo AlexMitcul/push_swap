@@ -6,7 +6,7 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 19:14:58 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/08 03:58:28 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/10 01:25:38 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@ int	return_error(void)
 
 int	main(int argc, char **argv)
 {
-	// t_stack *stack;
+	t_stack *stack;
 
-	// stack = NULL;
+	stack = NULL;
 
-	// if (read_data(&stack, argc, argv) == ERROR)
-	// 	return (return_error());
-	// check input
-	// check that data is sorted
-	// sort
-	// final sort if needed
-	// free data
+	if (read_data(&stack, argc, argv) == ERROR)
+		return (return_error());
+	if (is_sorted(stack))
+		final_sort(&stack);
+	else
+		sort(&stack);
+	free_stack(stack);
 
-	test();
+	// test();
 
 	return (0);
 }

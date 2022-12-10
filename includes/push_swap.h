@@ -6,7 +6,7 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 19:19:38 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/08 03:41:25 by amitcul          ###   ########.fr       */
+/*   Updated: 2022/12/10 01:17:39 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,5 +83,12 @@ void	move(t_stack **a, t_stack **b, t_moves moves);
 // * read.c
 */
 int	read_data(t_stack **stack, int argc, char **argv);
+
+/**
+// * sort.c
+*/
+void	final_sort(t_stack **stack);
+int		is_sorted(t_stack *stack);
+void	sort(t_stack **stack);
 
 #endif
