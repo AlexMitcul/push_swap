@@ -5,73 +5,79 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/08 01:29:55 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/08 03:42:05 by amitcul          ###   ########.fr       */
+/*   Created: 2023/01/14 14:14:43 by amitcul           #+#    #+#             */
+/*   Updated: 2023/01/14 22:16:24 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-/**
- * Some arguments aren’t integers
- * Some arguments are bigger than an integer
- * Some arguments there are duplicates.
-*/
+// TODO: Integer overflow maybe?
 
-// * OK
-int	is_in_stack(t_stack *stack, int value)
+int	is_right_item(char *item, t_stack *stack)
 {
-	while (stack)
-	{
-		if (stack->value == value)
-			return (1);
-		stack = stack->next;
-	}
-	return (0);
-}
-
-// * OK
-int	is_bad_number(int *value, char *str)
-{
-	char		*s;
-	long long	temp_value;
-
-	s = str;
-	if (*s == '-' || *s == '+')
-		s++;
-	while (*s != 0)
-	{
-		if (*s < '0' || *s > '9')
-			return (1);
-		s++;
-	}
-	temp_value = ft_atoll(str);
-	if (temp_value > INT_MAX || temp_value < INT_MIN)
-		return (1);
-	*value = (int) temp_value;
-	return (0);
-}
-
-// * OK
-int	read_data(t_stack **stack, int argc, char **argv)
-{
+	int	i;
 	int	value;
 
-	value = 0;
-	while (argc > 1)
+	i = 0;
+	while (item[i])
 	{
-		if (is_bad_number(&value, argv[argc - 1]))
-		{
-			free_stack(*stack);
-			return (ERROR);
-		}
-		if (is_in_stack(*stack, value))
-		{
-			free_stack(*stack);
-			return (ERROR);
-		}
-		push(stack, init_new_item(value));
-		argc--;
+		if (!ft_isdigit(item[i]))
+			return (0);
+		i++;
 	}
-	return (SUCCESS);
+	value = ft_atoi(item);
+	if (is_in_stack(stack, value))
+		return (0);
+	return (OK);
+}
+
+int	free_splitted(char **arr)
+{
+	int		i;
+
+	i = 0;
+	while (arr[i] != NULL)
+	{
+		free(arr[i]);
+		i++;
+	}
+	// free(arr[i]);
+	free(arr);
+	return (0);
+}
+
+/**
+ * Parse sequence of numbers from line (argc[1])
+*/
+int	read_input(t_stack **stack, char *input_line)
+{
+	char	**splitted;
+	int		count;
+	t_stack	*s;
+
+	splitted = ft_split(input_line, ' ');
+	if (splitted == NULL)
+		return (ERROR);
+	count = 0;
+	while (splitted[count])
+		count++;
+	count--;
+	s = init_stack();
+	if (!s)
+		return (free_splitted(splitted));
+	while (count >= 0)
+	{
+		if (is_right_item(splitted[count], s))
+			push(s, ft_atoi(splitted[count]));
+		else
+		{
+			free_stack(s);
+			return (free_splitted(splitted));
+		}
+		count--;
+	}
+	free_splitted(splitted);
+	*stack = s;
+	return (OK);
 }

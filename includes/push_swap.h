@@ -5,27 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/07 19:19:38 by amitcul           #+#    #+#             */
-/*   Updated: 2022/12/10 01:17:39 by amitcul          ###   ########.fr       */
+/*   Created: 2023/01/14 13:47:01 by amitcul           #+#    #+#             */
+/*   Updated: 2023/01/14 22:16:47 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "../libs/libft/libft.h"
-# include "../libs/ft_printf/ft_printf.h"
+# include "../lib/libft/libft.h"
+# include "../lib/ft_printf/ft_printf.h"
 
-# include <stdlib.h>
+# include "stack.h"
 
 # define ERROR 0
-# define SUCCESS 1
-
-typedef struct s_stack
-{
-	int				value;
-	struct s_stack	*next;
-}					t_stack;
+# define OK 1
 
 typedef enum e_moves {
 	SA,
@@ -41,54 +35,59 @@ typedef enum e_moves {
 	RRR
 }	t_moves;
 
-void	test(void);
-
-int	is_in_stack(t_stack *stack, int value);
-int	is_bad_number(int *value, char *str);
-
 /**
-// * utils
+ *! DEBUG
 */
-long long	ft_atoll(char *str);
+void	print_stack(t_stack *stack);
+void	print_stack_full(t_stack *stack);
 
-/**
-// * free.c
-*/
 void	free_stack(t_stack *stack);
 
+/**
+ * util.c
+*/
+void	quick_sort(int *arr, int start, int end);
+int	min(int a, int b);
+int max(int a, int b);
 
 /**
-// * stack.c
+ * read.c
 */
-void	push(t_stack **stack, t_stack *item);
-t_stack	*pop(t_stack **stack);
-t_stack	*init_new_item(int value);
-void	insert_at(t_stack **stack, t_stack *item, int position);
-int		get_stack_length(t_stack *stack);
+int	read_input(t_stack **stack, char *input_line);
 
 /**
-// * stack_operations.c
+ * stack.c
 */
-void	rotate(t_stack **stack);
-void	reverse_rotate(t_stack **stack);
-void	swap(t_stack **stack);
-void	push_to(t_stack **from, t_stack **to);
+void	push(t_stack *stack, int value);
+t_item	*pop(t_stack *stack);
+t_stack	*init_stack(void);
+int		is_in_stack(t_stack *stack, int value);
+void	insert_at(int value, t_stack *stack, int position);
 
 /**
-// * moves.c
+ * moves_functions.c
 */
-void	move(t_stack **a, t_stack **b, t_moves moves);
+void	reverse_rotate(t_stack *s);
+void	rotate(t_stack *s);
+void	push_to(t_stack *from, t_stack *to);
+void	swap(t_stack *stack);
 
 /**
-// * read.c
+ * moves_classification.c
 */
-int	read_data(t_stack **stack, int argc, char **argv);
+void	move(t_stack *a, t_stack *b, t_moves moves);
+void	move_n(t_stack *a, t_stack *b, t_moves moves, int count);
 
 /**
-// * sort.c
+ * sort.c
 */
-void	final_sort(t_stack **stack);
+void	sort(t_stack *a);
 int		is_sorted(t_stack *stack);
-void	sort(t_stack **stack);
+void	final_sort(t_stack *stack);
+
+/**
+ * moving_to_second_stack.c
+*/
+void	move_to_b(t_stack *a, t_stack *b);
 
 #endif
