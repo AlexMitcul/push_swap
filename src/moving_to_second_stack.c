@@ -6,7 +6,7 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 16:51:57 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/14 21:26:07 by amitcul          ###   ########.fr       */
+/*   Updated: 2023/01/17 19:41:15 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,19 +55,67 @@ void	move_to_b(t_stack *a, t_stack *b)
 	int	max;
 	int	median;
 
+	if (a == NULL)
+		return ;
 	find_min_max(a, &min, &max);
 	find_median(a, &median);
 	while (a->size > 3)
 	{
-		// print_stack(a);
-		if (a->top->value == min ||
-			a->top->value == max || a->top->value == median)
-			move(a, NULL, RA);
+		if (a->top->value == min
+			|| a->top->value == max || a->top->value == median)
+			move_n(a, NULL, RA, 1);
 		else
-			move(a, b, PB);
+			move_n(a, b, PB, 1);
 	}
-	// print_stack(a);
-	// ft_printf("moved\n\n\n\n");
 }
 
+void	find_best_move(t_stack *s)
+{
+	t_item	*curr;
+	int		i;
+	int		moves[4];
 
+	curr = s->top;
+	while (curr)
+	{
+		moves[0] = max(curr->params.ra, curr->params.rb);
+		moves[1] = max(curr->params.rra, curr->params.rrb);
+		moves[2] = curr->params.ra + curr->params.rrb;
+		moves[3] = curr->params.rra + curr->params.rb;
+		i = 0;
+		while (i < 4)
+		{
+			if (moves[i] < curr->params.least_moves)
+			{
+				curr->params.least_moves = moves[i];
+				curr->params.scheme = i;
+			}
+			i++;
+		}
+		curr = curr->next;
+	}
+}
+
+int	get_index_of_best_element(t_stack *s)
+{
+	t_item	*curr;
+	int		index;
+	int		steps;
+	int		i;
+
+	steps = INT_MAX;
+	curr = s->top;
+	index = -1;
+	i = 0;
+	while (curr)
+	{
+		if (curr->params.least_moves < steps)
+		{
+			steps = curr->params.least_moves;
+			index = i;
+		}
+		i++;
+		curr = curr->next;
+	}
+	return (index);
+}

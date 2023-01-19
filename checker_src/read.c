@@ -6,25 +6,29 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 14:14:43 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/18 10:54:13 by amitcul          ###   ########.fr       */
+/*   Updated: 2023/01/18 10:55:30 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../checker_includes/checker.h"
 
-int	is_overflow(char *number)
+static int	is_in_stack(t_stack *stack, int value)
 {
-	long long	value;
+	t_item	*curr;
 
-	value = ft_atoll(number);
-	if (value > 0 && value > (long long) INT_MAX)
-		return (1);
-	if (value < 0 && value < (long long) INT_MIN)
-		return (1);
+	if (stack->size == 0)
+		return (0);
+	curr = stack->top;
+	while (curr)
+	{
+		if (curr->value == value)
+			return (1);
+		curr = curr->next;
+	}
 	return (0);
 }
 
-int	is_right_item(char *item, t_stack *stack)
+static int	is_right_item(char *item, t_stack *stack)
 {
 	int	i;
 	int	value;
@@ -43,10 +47,10 @@ int	is_right_item(char *item, t_stack *stack)
 	value = ft_atoi(item);
 	if (is_in_stack(stack, value))
 		return (0);
-	return (OK);
+	return (1);
 }
 
-int	free_splitted(char **arr)
+static int	free_splitted(char **arr)
 {
 	int		i;
 
@@ -57,7 +61,7 @@ int	free_splitted(char **arr)
 		i++;
 	}
 	free(arr);
-	return (ERROR);
+	return (-1);
 }
 
 static int	arr_size(char **arr)
@@ -70,9 +74,6 @@ static int	arr_size(char **arr)
 	return (size - 1);
 }
 
-/**
- * Parse sequence of numbers from line (argc[1])
-*/
 int	read_input(t_stack **stack, char *input_line)
 {
 	char	**splitted;
@@ -81,7 +82,7 @@ int	read_input(t_stack **stack, char *input_line)
 
 	splitted = ft_split(input_line, ' ');
 	if (splitted == NULL)
-		return (ERROR);
+		return (-1);
 	count = arr_size(splitted);
 	s = init_stack();
 	if (!s)
@@ -99,5 +100,5 @@ int	read_input(t_stack **stack, char *input_line)
 	}
 	free_splitted(splitted);
 	*stack = s;
-	return (OK);
+	return (1);
 }

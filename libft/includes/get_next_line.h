@@ -1,39 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack.h                                            :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 13:51:37 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/17 19:50:11 by amitcul          ###   ########.fr       */
+/*   Created: 2022/11/28 09:26:40 by amitcul           #+#    #+#             */
+/*   Updated: 2023/01/17 22:04:57 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STACK_H
-# define STACK_H
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-typedef struct s_params
-{
-	int	ra;
-	int	rb;
-	int	rra;
-	int	rrb;
-	int	scheme;
-	int	least_moves;
-}	t_params;
+# include <stdlib.h>
+# include <unistd.h>
 
-typedef struct s_item
-{
-	int				value;
-	t_params		params;
-	struct s_item	*next;
-}				t_item;
+# include "libft.h"
 
-typedef struct s_stack
-{
-	int		size;
-	t_item	*top;
-}				t_stack;
+char	*get_next_line(int fd);
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 #endif

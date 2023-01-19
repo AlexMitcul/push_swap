@@ -1,39 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack.h                                            :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 13:51:37 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/17 19:50:11 by amitcul          ###   ########.fr       */
+/*   Created: 2023/01/18 08:45:59 by amitcul           #+#    #+#             */
+/*   Updated: 2023/01/18 08:46:19 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STACK_H
-# define STACK_H
+#include "../checker_includes/checker.h"
 
-typedef struct s_params
+void	free_stack(t_stack *stack)
 {
-	int	ra;
-	int	rb;
-	int	rra;
-	int	rrb;
-	int	scheme;
-	int	least_moves;
-}	t_params;
+	t_item	*curr;
+	t_item	*next;
 
-typedef struct s_item
-{
-	int				value;
-	t_params		params;
-	struct s_item	*next;
-}				t_item;
-
-typedef struct s_stack
-{
-	int		size;
-	t_item	*top;
-}				t_stack;
-
-#endif
+	if (stack == NULL)
+		return ;
+	curr = stack->top;
+	while (curr)
+	{
+		next = curr->next;
+		free(curr);
+		curr = next;
+	}
+	free(stack);
+}

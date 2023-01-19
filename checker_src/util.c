@@ -5,60 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 16:44:23 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/18 10:51:03 by amitcul          ###   ########.fr       */
+/*   Created: 2023/01/18 10:53:51 by amitcul           #+#    #+#             */
+/*   Updated: 2023/01/18 10:57:32 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	min(int a, int b)
+#include "../checker_includes/checker.h"
+
+int	is_overflow(char *number)
 {
-	if (a < b)
-		return (a);
-	return (b);
-}
+	long long	value;
 
-int	max(int a, int b)
-{
-	if (a > b)
-		return (a);
-	return (b);
-}
-
-void	ft_swap(int *a, int *b)
-{
-	int	tmp;
-
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
-}
-
-void	quick_sort(int *arr, int start, int end)
-{
-	int	i;
-	int	j;
-	int	pivot;
-
-	if (start >= end)
-		return ;
-	i = start;
-	j = end;
-	pivot = arr[(start + end) / 2];
-	while (i <= j)
-	{
-		while (arr[i] < pivot)
-			i++;
-		while (arr[j] > pivot)
-			j--;
-		if (i <= j)
-		{
-			ft_swap(&arr[i], &arr[j]);
-			i++;
-			j--;
-		}
-	}
-	quick_sort(arr, start, j);
-	quick_sort(arr, i, end);
+	value = ft_atoll(number);
+	if (value > 0 && value > (long long) INT_MAX)
+		return (1);
+	if (value < 0 && value < (long long) INT_MIN)
+		return (1);
+	return (0);
 }
 
 long long	ft_atoll(const char *str)

@@ -6,27 +6,11 @@
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 13:50:46 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/17 18:22:46 by amitcul          ###   ########.fr       */
+/*   Updated: 2023/01/18 08:55:45 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
-
-int	is_in_stack(t_stack *stack, int value)
-{
-	t_item	*curr;
-
-	if (stack->size == 0)
-		return (0);
-	curr = stack->top;
-	while (curr)
-	{
-		if (curr->value == value)
-			return (1);
-		curr = curr->next;
-	}
-	return (0);
-}
+#include "../checker_includes/checker.h"
 
 void	push(t_stack *stack, int value)
 {

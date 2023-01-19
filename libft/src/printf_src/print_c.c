@@ -1,39 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack.h                                            :+:      :+:    :+:   */
+/*   print_c.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 13:51:37 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/17 19:50:11 by amitcul          ###   ########.fr       */
+/*   Created: 2022/11/13 03:05:38 by amitcul           #+#    #+#             */
+/*   Updated: 2023/01/17 13:05:30 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STACK_H
-# define STACK_H
+#include "../../includes/ft_printf.h"
 
-typedef struct s_params
+int	print_c(t_token *token, unsigned char value)
 {
-	int	ra;
-	int	rb;
-	int	rra;
-	int	rrb;
-	int	scheme;
-	int	least_moves;
-}	t_params;
+	int	count;
 
-typedef struct s_item
-{
-	int				value;
-	t_params		params;
-	struct s_item	*next;
-}				t_item;
-
-typedef struct s_stack
-{
-	int		size;
-	t_item	*top;
-}				t_stack;
-
-#endif
+	count = 0;
+	if (token->dash == 1)
+	{
+		count += write(STDOUT_FILENO, &value, 1);
+		while (token->width_v-- > 1)
+			count += write(STDOUT_FILENO, " ", 1);
+	}
+	else
+	{
+		while (token->width_v-- > 1)
+			count += write(STDOUT_FILENO, " ", 1);
+		count += write(STDOUT_FILENO, &value, 1);
+	}
+	return (count);
+}

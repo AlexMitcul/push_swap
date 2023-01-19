@@ -1,39 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack.h                                            :+:      :+:    :+:   */
+/*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 13:51:37 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/17 19:50:11 by amitcul          ###   ########.fr       */
+/*   Created: 2023/01/18 08:42:05 by amitcul           #+#    #+#             */
+/*   Updated: 2023/01/18 08:42:10 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STACK_H
-# define STACK_H
+#include "../checker_includes/checker.h"
 
-typedef struct s_params
+t_stack	*init_stack(void)
 {
-	int	ra;
-	int	rb;
-	int	rra;
-	int	rrb;
-	int	scheme;
-	int	least_moves;
-}	t_params;
+	t_stack	*new;
 
-typedef struct s_item
+	new = malloc(sizeof(t_stack));
+	if (!new)
+		return (NULL);
+	new->size = 0;
+	new->top = NULL;
+	return (new);
+}
+
+t_item	*init_new_item(int value)
 {
-	int				value;
-	t_params		params;
-	struct s_item	*next;
-}				t_item;
+	t_item		*new;
 
-typedef struct s_stack
-{
-	int		size;
-	t_item	*top;
-}				t_stack;
-
-#endif
+	new = malloc(sizeof(t_item));
+	if (!new)
+		return (NULL);
+	new->next = NULL;
+	new->value = value;
+	return (new);
+}

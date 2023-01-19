@@ -1,39 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack.h                                            :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amitcul <amitcul@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 13:51:37 by amitcul           #+#    #+#             */
-/*   Updated: 2023/01/17 19:50:11 by amitcul          ###   ########.fr       */
+/*   Created: 2022/10/20 18:04:29 by alexmitcul        #+#    #+#             */
+/*   Updated: 2022/11/29 13:05:22 by amitcul          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STACK_H
-# define STACK_H
+#include "../../includes/libft.h"
 
-typedef struct s_params
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	int	ra;
-	int	rb;
-	int	rra;
-	int	rrb;
-	int	scheme;
-	int	least_moves;
-}	t_params;
+	size_t	srclen;
 
-typedef struct s_item
-{
-	int				value;
-	t_params		params;
-	struct s_item	*next;
-}				t_item;
-
-typedef struct s_stack
-{
-	int		size;
-	t_item	*top;
-}				t_stack;
-
-#endif
+	srclen = ft_strlen(src);
+	if (srclen + 1 < dstsize)
+		ft_memcpy(dst, src, srclen + 1);
+	else if (dstsize != 0)
+	{
+		ft_memcpy(dst, src, dstsize - 1);
+		dst[dstsize - 1] = '\0';
+	}
+	return (srclen);
+}
